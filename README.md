@@ -21,4 +21,11 @@
 ### 다른 환경에서 git 이어서 작업하기
 1. 새폴더 연결하기
 2. `git clone 저장소주소붙여넣기`
-3. TIL을 내려받아 경로를 바꾸기 위해 'cd TIL'이라고 작성하기
+3. `cd 저장소폴더명`
+4. 자유롭게 수정 후 저장
+5. `git status` 상태확인
+6. `git add .` 스테이징 업로드
+7. `git commit -m '메세지'`
+8. `git push origin main` 저장소업로드
+### (위 이어서) 다른 환경에서 git 이어서 작업하기(학원)
+* `git pull origin main` 집에서 올린 파일 내려받기
