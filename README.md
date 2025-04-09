@@ -34,3 +34,13 @@
 8. `git push origin main` 저장소업로드
 ### (위 이어서) 다른 환경에서 git 이어서 작업하기(학원)
 * `git pull origin main` 집에서 올린 파일 내려받기
+### 바로가기 메뉴 만들기
+0. (조건) 화면이 수직으로 충분히 이동할 수 있을만큼 세로 스크롤 준비
+1. 바로가기 메뉴 a 태그 준비하기
+2. 바로가기 위치 div id명 준비하기
+3. 위 1번 `a` 속성 `href` 값으로 `#` 먼저 작성 후 위 2번 이름 작성하기
+4. 위 3번 결과 예시) id가 abcd일 경우 `<a href="#abcd"></a>`
+`<a(링크태그) href(주소를 담는 속성)="#"></a>`
+`<a href="#header"></a>`
+`<a href="./basic/index.html"></a>`
+`<a href="./basic/index.html#main"></a>`
