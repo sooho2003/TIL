@@ -41,6 +41,6 @@
 3. 위 1번 `a` 속성 `href` 값으로 `#` 먼저 작성 후 위 2번 이름 작성하기
 4. 위 3번 결과 예시) id가 abcd일 경우 `<a href="#abcd"></a>`
 `<a(링크태그) href(주소를 담는 속성)="#"></a>`
-`<a href="#header"></a>`
-`<a href="./basic/index.html"></a>`
-`<a href="./basic/index.html#main"></a>`
+`<a href="#header"></a>` - 임시링크(연결페이지 제작 전일 경우)
+`<a href="./basic/index.html"></a>` - 바로가기링크(같은 파일 내 다른 위치 이동)
+`<a href="./basic/index.html#main"></a>` - 상대경로링크+바로가기링크
