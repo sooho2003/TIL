@@ -1,9 +1,55 @@
-#mobile_wrap {background-color:#85F095;}
-#mobile_wrap .photo {}
+#mobile_wrap {
+    background-color:#85F095;/* #mobile_wrap */
+    width:440px; height:956px;/* #mobile_wrap */
+    text-align:center;/* 자식,자손 정렬 */
+    font-family:"Pretendard", sans-serif;/* 자식,자손 글꼴 통일 */
+}
+#mobile_wrap .photo {
+    margin-top:105px; /* 위쪽 여백 */
+    margin-bottom:26px;
+    display:inline-block;
+}
 #mobile_wrap .photo .img {}
-#mobile_wrap .h1 {}
-#mobile_wrap .h1 span {}
-#mobile_wrap .h2 {}
-#mobile_wrap .git {}
+#mobile_wrap h1 {
+    /* 글꼴 부모 상속 상태 */
+    font-size:1.875rem; /* 글자크기 */
+    font-weight:400; /* 글자굵기 */
+    line-height:1; /* 행단 */
+    letter-spacing:-0.02rem; /* 자간 */
+    color:#000;
+    margin-bottom:46px; /* margin 밑으로 보내기 또는 적용 */
+}
+#mobile_wrap h1 span {
+    /* 글꼴,행간,자간 상속상태 */
+    font-family:"pretendard", sans-serif; /* 글꼴 */
+    font-size:30px; /* 글자크기 */
+    font-weight:mixed; /* 글자굵기 */
+}
+#mobile_wrap h2 {
+    /*  */
+    line-height:1.8; /* 행단 */
+    font-size:16px; /* 글자크기 */
+    font-weight:600; /* 글자굵기 */
+    letter-spacing:-0.02em; /* 자간 */
+    width:168px; /* 가로 넓이 */
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left; /* 수평전 */
+}
+#mobile_wrap .git {
+    line-height:1.8;
+    font-size:1rem;
+    font-weight:400;
+    letter-spacing:-0.02em;
+    width:168px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+}
 #mobile_wrap .skill {}
-#mobile_wrap .skill li {}
+#mobile_wrap .skill li {
+    width:168px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+}
