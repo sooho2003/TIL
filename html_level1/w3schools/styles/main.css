@@ -1,0 +1,54 @@
+#wrap {
+    background-color:aqua;
+    width:440; height:956px;
+    padding-left:15px;
+    padding-right:15px;
+} 
+#wrap h1 {
+    font-size:1rem;
+    line-height:100%;
+    letter-spacing: -10%;
+}
+#wrap > p {
+    font-size:1.375rem;
+    line-height:100%;
+    letter-spacing:-10%;
+}/* wrap 모든 자식 p */
+#wrap h1+p {
+    background-color:yellow;
+    width:49px;
+    height:27px;
+}/* #wrap의 h1 옆에 p */
+#wrap #login_frm {
+    background-color:lime;
+    font-size:1.375rem;
+    line-height:100%;
+    letter-spacing:-10%;
+}
+#wrap #login_frm h2 {
+    width:89px;
+    height:27px;
+}
+#wrap #login_frm p {
+    font-size:1.375rem;
+}
+#wrap #login_frm p input {
+    width:148px;
+    height:27px;
+}
+#wrap #login_frm p #login_btn {
+    width:410px;
+    height:45px;
+}
+#wrap #login_frm p #login_google {
+    width:410px;
+    height:45px;
+}
+#wrap #login_frm+p {
+    background-color:coral;
+    width:212px;
+    height:17px;
+}/* #wrap의 login_frm 옆에 */
+#wrap #login_frm+p a {
+
+}
