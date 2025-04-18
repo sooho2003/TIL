@@ -1,48 +1,69 @@
 #wrap {
     background-color:aqua;
-    width:440; height:956px;
+    width:440px; height:956px;
     padding-left:15px;
     padding-right:15px;
 } 
 #wrap h1 {
-    font-size:1rem;
-    line-height:100%;
-    letter-spacing: -10%;
+    padding-top/* 안쪽 여백 */:57px;
+    margin-bottom/* 바깥 여백 */:27px;
+    font-size:2.5rem;/* 40px */
+    font-weight:700;/* bold */
 }
-#wrap > p {
-    font-size:1.375rem;
-    line-height:100%;
-    letter-spacing:-10%;
-}/* wrap 모든 자식 p */
+#wrap > p {}/* wrap 모든 자식 p */
 #wrap h1+p {
-    background-color:yellow;
-    width:49px;
-    height:27px;
+
+    padding-top:25px;
+    margin-bottom:158px;
+
 }/* #wrap의 h1 옆에 p */
 #wrap #login_frm {
-    background-color:lime;
-    font-size:1.375rem;
-    line-height:100%;
-    letter-spacing:-10%;
+    padding-top:158px;
+    margin-bottom:21px;
+    font-weight:22px;
+    font-weight:600;
 }
 #wrap #login_frm h2 {
-    width:89px;
-    height:27px;
+    padding-top:36px;
+    margin-bottom:73px;
+    font-size:22px;
+    font-weight:600;
+}
+#wrap #login_frm+p {
+    font-size:22px;
+    letter-spacing:-10;
+    font-weight:600;
+    text-align:center;
+    padding-top:58px;
+    margin-top:21px;
+    /* wrap의 login_frm 옆에 p */
 }
 #wrap #login_frm p {
-    font-size:1.375rem;
+    font-size:12px;
+    padding-top:36px;
+    margin-top:73px;
 }
-#wrap #login_frm p input {
-    width:148px;
-    height:27px;
+#wrap #login_frm p.user_in {
+    padding-top:36px;
+    margin-top:63px;
+    font-size:12px;
+    font-weight:300;
+    letter-spacing:-2;
+}
+#wrap #login_frm p input::placeholder {/* placeholder 속성선택자작성방법 */
+    padding-top:48px;
+    margin-top:18px;
+    font-size:22px;
+    font-weight:600;
 }
 #wrap #login_frm p #login_btn {
-    width:410px;
-    height:45px;
+    padding-top:48px;
+    margin-top:18px;
+    background-color:#040404;
 }
 #wrap #login_frm p #login_google {
-    width:410px;
-    height:45px;
+    font-size:12px;
+    background-color: aqua;
 }
 #wrap #login_frm+p {
     background-color:coral;
