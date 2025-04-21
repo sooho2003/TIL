@@ -1,0 +1,29 @@
+/* nth1.css */
+table, tr, td {border:1px solid #000; border-collapse: collapse;}
+#t {width:300px; height:300px;}
+#t tbody {}
+#t tbody tr {}
+#t tbody tr td {}
+/* #t tbody tr:nth-child(1) td:nth-child(1) {background-color:yellow;} */
+#t tbody tr:first-child td:first-child {background-color:coral;}
+#t tbody tr:nth-child(2) td:nth-child(2) {background-color:yellow;}
+/* #t tbody tr:nth-child(3) td:nth-child(3) {background-color: coral;} */
+#t tbody tr:last-child td:last-child {background-color:yellow;}
+.box h2:nth-child(3) {background-color:aqua;;}
+.box h2:nth-of-type(1) {color:red;}
+.box h2:first-of-type {font-weight:800;}
+.box p:nth-child(5) {background-color:aqua;}
+.box p:nth-of-type(3) {color:red;}
+.list {}
+.list li {
+    width:50px; 
+    height:50px; 
+    font-size:15px; 
+    border:1px solid #000;
+    display:inline-block;
+    text-align:center;
+    line-height:50px;
+}
+.list li:nth-child(3n+2) {background-color:yellow;}
+.list li:nth-child(odd) {border:2px solid red;}
+.list li:nth-child(even) {color:blue;}
