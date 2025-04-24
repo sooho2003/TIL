@@ -13,7 +13,6 @@ main h1 a img {width:200px;}
 main section {}
 /* =======================탭제목 */ 
 main section .tab_title {
-    background-color:orange;
     overflow:hidden;
     margin-bottom:40px;
 }
@@ -36,7 +35,6 @@ main section .tab_title .sign_in {}
 main section .tab_title .sign_up {}
 /* ========================탭내용 */
 main section .tab_container {
-    background-color:brown;
     padding:0 30px;/* 앱의 주요 콘텐츠가 폰 좌우끝에 붙지 않도록 최소 여백설정 */
 }
 /* ========================sign_in 클릭 시 열리는 내용 */
@@ -80,7 +78,7 @@ main section .tab_container #login_frm .btn_search #sign_in_btn {
     background-color:#48f78b; color:#fff;
     width:100%; height:50px; border-radius:25px;
 }
-main section .tab_container #login_frm .btn_search #sign_in_btn a .pw_search {
+main section .tab_container #login_frm .btn_search .pw_search {
     color:#fff; text-align:center;
     display:block;
 }
