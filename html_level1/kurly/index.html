@@ -22,53 +22,56 @@
         </div>
         <form action="#" method="post" id="login_frm">
             <dl class="member_info">
-
                 <dt>아이디<em>*</em></dt>
-                <dd><input type="text" name="아이디" placeholder="아이디를 입력해주세요"></dd>
-                <dd><button type="button" id="id_overlap_btn">중복확인</button></dd>
+                <dd><input type="text" name="user_id" placeholder="아이디를 입력해주세요"></dd>
+                <dd><button type="button" id="id_overlap_btn" class="btn">중복확인</button></dd>
                 <dt>비밀번호<em>*</em></dt>
-                <dd><input type="password" name="비밀번호" placeholder=""></dd>
+                <dd><input type="password" name="user_pw_re" placeholder="비밀번호를 한번 더 입력해주세요"></dd>
                 <dd></dd>
                 <dt>비밀번호확인<em>*</em></dt>
-                <dd><input type="" name="" placeholder=""></dd>
+                <dd><input type="password" name="user_name" placeholder="이름을 입력해주세요"></dd>
                 <dd></dd>
                 <dt>이름<em>*</em></dt>
-                <dd><input type="" name="" placeholder=""></dd>
+                <dd><input type="text" name="user_name" placeholder="이름을 입력해주세요"></dd>
                 <dd></dd>
                 <dt>이메일<em>*</em></dt>
-                <dd><input type="" name="" placeholder=""></dd>
-                <dd><button type="" id=""></button></dd>
+                <dd><input type="email" name="user_email" placeholder="예)abc@web.com"></dd>
+                <dd><button type="button" id="email_overlap_btn" class="btn">중복확인</button></dd>
                 <dt>휴대폰<em>*</em></dt>
                 <dd>
-                    <select name="">
-                        <option value="">KT</option>
+                    <select name="news_agency">
+                        <option>통신사</option>
+                        <option value="kt">KT</option>
+                        <option value="skt">SKT</option>
+                        <option value="lgu">LGU+</option>
+                        <option value="mvno">알뜰폰</option>
                     </select>
-                    <input type="" name="" placeholder="">
+                    <input type="number" name="user_phone_num" placeholder="숫자만 입력해주세요 예)01012345678">
                 </dd>
-                <dd><button type="" id=""></button></dd>
+                <dd><button type="button" id="authentication_btn" class="btn">인증번호받기</button></dd>
                 <dt>주소<em>*</em></dt>
                 <dd>
-                    <button type="" id=""></button>
-                    <span>배송지에 따라</span>
+                    <button type="button" id="address_search_btn">주소검색</button>
+                    <span>배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
                 </dd>
                 <dd></dd>
                 <dt>성별<em></em></dt>
-                <dd>
-                    <input type="" name="" value="" id=""><label for="">남자</label>
-                    <input type="" name="" value="" id=""><label for="">여자</label>
-                    <input type="" name="" value="" id=""><label for="">선택안함</label>
+                <dd class="gender_g">
+                    <input type="radio" name="gender" value="male" id="male"><label for="male">남자</label>
+                    <input type="radio" name="gender" value="female" id="female"><label for="female">여자</label>
+                    <input type="radio" name="gender" value="gender_none" id="gender_none"><label for="gender_none">선택안함</label>
                 </dd>
                 <dd></dd>
                 <dt>생년월일<em></em></dt>
                 <dd>
-                    <input type="" name="" placeholder="">
-                    <input type="" name="" placeholder="">
-                    <input type="" name="" placeholder="">
+                    <span><input type="number" name="birthday_year" placeholder="YYYY"></span>
+                    <span><input type="number" name="birthday_month" placeholder="MM"></span>
+                    <span><input type="number" name="birthday_day" placeholder="DD"></span>
                 </dd>
                 <dd></dd>
             </dl>
             <div class="btn">
-                <button type="" id="">가입하기</button>
+                <button type="submit" id="sign_up_btn">가입하기</button>
             </div>
         </form>
     </main>
