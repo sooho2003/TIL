@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation | keyframes | css</title>
+    <link rel="stylesheet" href="../css_basic/styles/reset.css">
+    <style>
+        main {background:#eee; padding:50px; height:100vh;}
+        main .target {}/* 공통 */
+        main .ball {
+            background:radial-gradient(at left top, #fff, #222);
+            background-size:150%;
+            /* background-position:100%; */
+            width:50px; height:50px; border-radius:50%;
+            animation:right500 1s linear 1s 3 alternate both;
+        }
+        main .ball2 {
+            background:radial-gradient(at left top, #fff, #f00);
+            background-size:150%;
+            width:50px; height:50px; border-radius:50%;
+            animation:top400 2s linear 2s 3 alternate both;
+        }
+        /* main .ball3 {animation:zigzag 2.5s linear infinite alternate;}
+        main .ball3 img {width:80px; animation:rotate360 0.5s linear infinite;} */
+        /* HTMl 텍스트 애니메이션 만들기 */
+        section {}
+        section .ad {height:50vh; padding:50px;}
+        section .ad span {
+            text-transform:uppercase;
+            font-size:3rem; font-weight:800;
+            display:inline-block;
+            animation:ad_txt 0.5s both;
+        }
+        section .ad span:nth-child(1) {animation-delay:0s;}
+        section .ad span:nth-child(2) {animation-delay:0.3s;}
+        section .ad span:nth-child(3) {animation-delay:0.6s;}
+        section .ad span:nth-child(4) {animation-delay:0.9s;}
+        /* 애니메이션 적용 순서 1. 키프레임(애니메이션(장면)생성 2. 애니메이션호출 */
+        section .ad2 em:nth-child(1) {animation-delay:0s;}
+        section .ad2 em:nth-child(2) {animation-delay:0.3s;}
+        section .ad2 em:nth-child(3) {animation-delay:0.6s;}
+        section .ad2 em:nth-child(4) {animation-delay:0.9s;}
+        @keyframes ad_txt {
+            from {transform:translateY(50px); opacity:0;}
+            to {transform:translateY(0); opacity:1;}
+        }
+        @keyframes rotate360 {
+            from {transform:rotate(0);}
+            to {transform:rotate(360deg);}
+        }
+        @keyframes zigzag {
+            0% {transform:translate(0, 0);}
+            50% {transform:translate(500px, 0);}
+            75% {transform:translate(0, 500px);}
+            100% {transform:translate(500px, 500px);}
+        }
+        @keyframes right500 {
+            from {transform:translateX(0);}
+            to {transform:translateX(500px);}
+        }
+        @keyframes top400 {
+            from {transform:translateY(0) rotate(0);}
+            to {transform:translateY(400px) rotate(360deg);}
+        }
+        @keyframes top300 {
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="target ball"></div>
+        <div class="target ball2"></div>
+        <div class="target ball3"><img src="https://cdn-icons-png.flaticon.com/128/3012/3012434.png" alt=""></div>
+    </main>
+    <section>
+        <div class="ad">
+            <span>h</span>
+            <span>t</span>
+            <span>m</span>
+            <span>l</span>
+        </div>
+        <div class="ad2">
+            <em>t</em>
+            <em>i</em>
+            <em>g</em>
+            <em>e</em>
+            <em>r</em>
+        </div>
+    </section>
+</body>
+</html>
