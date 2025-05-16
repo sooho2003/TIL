@@ -23,18 +23,28 @@
             background-position:center;
             opacity:0; transition:opacity 0.5s;
         }
-        .slide_wrap .slide_c .slide1 {background-image:url(images/bg1.jpg); opacity:1}
+        .slide_wrap .slide_c .slide1 {
+            background-image:url(images/bg1.jpg); 
+            opacity:1}
         .slide_wrap .slide_c .slide2 {background-image:url(images/bg2.jpg);}
         .slide_wrap .slide_c .slide3 {background-image:url(images/bg3.jpg);}
         .slide_wrap .slide_c .slide p {
             text-align:center; color:#fff;
             font-size:3rem; letter-spacing:-1px;
             position:relative; top:400px;
+            animation:txt 1.5s both;
         }
         /* class */
 
         /* animation */
-
+        @keyframes bg {
+            0% {background-size:100%;}
+            100% {background-size:120%;}
+        }
+        @keyframes txt {
+            0% {opacity:0; transform:(0.8) translateY(40px);}
+            100% {opacity:1; transform:(1) translateY(0);}
+        }
     </style>
     <script>
         window.onload=function(){
